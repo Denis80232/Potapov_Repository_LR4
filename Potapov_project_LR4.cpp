@@ -14,8 +14,10 @@ void Task2(double x, double y){
     cout << "Целая часть разности x - y: " << integerPart << endl;
 }
 
-void Task3(){
-    //developing...
+void Task3(double x, double y){
+    double difference = x - y;
+    double fractionalPart = difference - floor(difference);
+    cout << "Дробная часть разности x - y: " << fractionalPart << endl;
 }
 
 int main(){
@@ -24,7 +26,7 @@ int main(){
     int choice;
     do{
         cout << "Меню: " << endl;
-        cout << "1. Ввод вещественных чтсел x и y" << endl;
+        cout << "1. Ввод вещественных чисел x и y" << endl;
         cout << "2. Нахождение целой части разности этих 2-х чисел." << endl;
         cout << "3. Нахождение дробной части разности этих 2-х чисел." << endl;
         cout << "0. Выход из программы. "  << endl;
