@@ -2,11 +2,16 @@
 #include <cmath>
 using namespace std;
 
-void Task1(){
-    //developing...
+void Task1(double& x, double& y){
+    cout << "Введите вещественное число x: ";
+    cin >> x;
+    cout << "Введите вещественное число y: ";
+    cin >> y;
 }
-void Task2(){
-    //developing...
+void Task2(double x, double y){
+    double difference = x - y;
+    double integerPart = floor(difference); 
+    cout << "Целая часть разности x - y: " << integerPart << endl;
 }
 
 void Task3(double x, double y){
